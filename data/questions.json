@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-11-18",
   "modules": [
     {
@@ -91,7 +91,8 @@
           "zh": "我曾在上海工作。起初住在市中心，后来住在城外。",
           "de": "Ich habe in Shanghai gearbeitet. Zunächst habe ich im Stadtzentrum gewohnt, später außerhalb der Stadt."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
     },
     {
       "id": "housing-02",
@@ -170,7 +171,8 @@
           "zh": "我每个月为交通支付50欧元，而为食物支付200欧元。",
           "de": "Für Verkehrsmittel bezahle ich 50 Euro im Monat, für Lebensmittel dagegen 200 Euro."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
     },
     {
       "id": "housing-03",
@@ -249,7 +251,8 @@
           "zh": "通过定期学习，学生能够取得更好的成绩。",
           "de": "Durch regelmäßiges Lernen können Studierende bessere Leistungen erzielen."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
     },
     {
       "id": "housing-04",
@@ -304,7 +307,8 @@
           "zh": "总体来说，我愿意在学生宿舍里生活。",
           "de": "Grundsätzlich würde ich gerne im Studentenwohnheim leben."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
     },
     {
       "id": "housing-05",
@@ -365,7 +369,8 @@
           "zh": "这样就很难专心学习。",
           "de": "Dadurch fällt es schwer, sich auf das Lernen zu konzentrieren."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
     },
     {
       "id": "housing-06",
@@ -444,7 +449,8 @@
           "zh": "因此，人们更容易集中注意力。",
           "de": "Dadurch fällt es leichter, sich zu konzentrieren."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
     },
     {
       "id": "housing-07",
@@ -511,7 +517,8 @@
           "zh": "这样，许多学生就需要为交通支付更少的钱。",
           "de": "So müssen viele Studierende weniger Geld für den Verkehr ausgeben."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
     },
     {
       "id": "housing-08",
@@ -572,7 +579,16 @@
           "zh": "对我来说，教学质量比学校的位置更重要。",
           "de": "Die Unterrichtsqualität ist für mich wichtiger als die Lage der Schule."
         }
-      ]
+      ],
+      "topicId": "campus-housing"
+    }
+  ],
+  "topics": [
+    {
+      "id": "campus-housing",
+      "title": "第01篇 · 住在大学校园",
+      "subtitle": "Wohnen auf dem Campus",
+      "description": "校园住宿的优缺点、个人经历与总结"
     }
   ]
 }
