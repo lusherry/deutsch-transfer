@@ -596,6 +596,12 @@
           "stage": "transfer",
           "zh": "因此，我愿意利用这个机会。",
           "de": "Deshalb würde ich gerne diese Möglichkeit nutzen."
+        },
+        {
+          "id": "h8-q13",
+          "stage": "transfer",
+          "zh": "因此，我愿意参加这个项目。",
+          "de": "Deshalb würde ich gerne an diesem Projekt teilnehmen."
         }
       ],
       "topicId": "campus-housing"
