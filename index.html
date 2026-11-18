@@ -19,7 +19,7 @@ button:hover{border-color:#8eafa0}button:focus-visible,textarea:focus-visible{ou
 .mode button{border:0;background:transparent;padding:9px 13px;font-size:13px}.mode button.active{background:white;box-shadow:0 1px 5px #203c2b19}
 .summary{display:flex;align-items:center;gap:12px;margin:15px 0 24px;color:#68776e;font-size:13px}
 .summary strong{color:#2e4b3d;font-size:20px}.summary span{background:#e4eee5;border-radius:16px;padding:4px 10px}
-.catalog{display:grid;gap:11px}.module{display:flex;text-align:left;gap:14px;align-items:center;background:white;border:1px solid #e3e9e3;border-radius:17px;padding:19px;width:100%;transition:transform .12s,background .12s}
+.catalog{display:grid;gap:13px}.topic{background:#fff;border:1px solid #e0e8e0;border-radius:19px;overflow:hidden}.topicHead{display:flex;width:100%;align-items:center;gap:14px;text-align:left;padding:21px 19px;border:0;border-radius:0;background:#f4f8f2}.topicHead:hover{background:#ebf3eb}.topicTitle{font-size:18px;font-weight:730}.topicSubtitle{font-size:13px;color:#688275;margin-top:5px}.topicInfo{color:#788b7d;font-size:12px;white-space:nowrap}.topicBody{display:grid;gap:9px;padding:12px}.topicBody .module{box-shadow:none;background:#fff}.topicBody .module:hover{background:#f8fbf7}.topicOverview{background:#ecf3ed!important;border-color:#d5e4d7!important}.topicClosed{display:none}.module{display:flex;text-align:left;gap:14px;align-items:center;background:white;border:1px solid #e3e9e3;border-radius:17px;padding:19px;width:100%;transition:transform .12s,background .12s}
 .module:hover{background:#f8fbf7;transform:translateY(-1px)}.number{flex:none;width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#e3efde;color:#365d49;font-weight:700}
 .module:nth-child(4n+2) .number{background:#fff1d9;color:#9b652b}.module:nth-child(4n+3) .number{background:#e0eef8;color:#416f92}.module:nth-child(4n+4) .number{background:#f7e7e9;color:#995869}
 .moduleText{flex:1;min-width:0}.moduleName{font-size:16px;font-weight:680}.moduleSub{font-size:13px;color:#777e79;margin-top:4px;overflow-wrap:anywhere}
@@ -42,7 +42,7 @@ footer{margin-top:42px;padding-top:20px;border-top:1px solid #e9eee9;font-size:1
 <header><div class="brand">德语迁移练习册 <span style="color:#87a795">/ Deutsch</span></div><button id="home" class="ghost small hidden">← 返回目录</button></header>
 <div id="catalog">
  <div class="eyebrow">SPRACHTRAINING · 持续积累</div><h1>从理解到独立表达</h1>
- <p class="sub">按主题选择练习，先看中文独立写德语，再核对参考答案。每一次新练习都可以继续加入这里。</p>
+ <p class="sub">先选择一篇已学的 Präsentation，再进入具体句型模块。中文独立作答、核对参考答案，可反复复习。</p>
  <div class="mode" id="catalogMode"><button data-mode="transfer" class="active">仅迁移练习</button><button data-mode="all">完整检测</button></div>
  <div id="summary" class="summary"></div><div id="modules" class="catalog"><div class="loading">正在载入练习题库……</div></div>
 </div>
@@ -65,7 +65,7 @@ footer{margin-top:42px;padding-top:20px;border-top:1px solid #e9eee9;font-size:1
 (function(){
 "use strict";
 const els=id=>document.getElementById(id);
-let modules=[], mode="transfer", chosen="all", list=[], pos=0, answers={}, revealed={}, done=false;
+let modules=[], topics=[], mode="transfer", chosen="all", list=[], pos=0, answers={}, revealed={}, done=false;
 const stageNames={recall:"第一阶段 · 语块回忆",rebuild:"第二阶段 · 原句重组",transfer:"第三阶段 · 迁移练习"};
 const normalize=s=>String(s||"").normalize("NFC").trim().replace(/\s+/g," ");
 const storageKey="deutsch-transfer-practice-v1";
@@ -75,20 +75,43 @@ function save(){
 function restore(){try{return JSON.parse(localStorage.getItem(storageKey)||"null");}catch(_){return null;}}
 function setMode(m){mode=m;document.querySelectorAll("[data-mode]").forEach(b=>{b.classList.toggle("active",b.dataset.mode===mode);b.setAttribute("aria-pressed",String(b.dataset.mode===mode));});renderCatalog();if(!els("practice").classList.contains("hidden")){start(chosen);}save();}
 function filtered(m){return m.questions.filter(q=>mode==="all"||q.stage==="transfer");}
-function getList(id){return (id==="all"?modules:modules.filter(m=>m.id===id)).flatMap(m=>filtered(m).map(q=>({...q,moduleTitle:m.title})))}
+function getList(id){
+ const selected=id==="all"?modules:id.startsWith("topic:")?modules.filter(m=>m.topicId===id.slice(6)):modules.filter(m=>m.id===id);
+ return selected.flatMap(m=>filtered(m).map(q=>({...q,moduleTitle:m.title})));
+}
 function textEl(tag,cl,txt){const el=document.createElement(tag);if(cl)el.className=cl;el.textContent=txt;return el;}
 function renderCatalog(){
  const total=modules.reduce((n,m)=>n+filtered(m).length,0),wrap=els("modules");wrap.replaceChildren();
- els("summary").replaceChildren(textEl("strong","",modules.length+" 组"),textEl("span","",total+" 道练习"));
- function row(id,title,subtitle,count,num){
-  const b=document.createElement("button");b.type="button";b.className="module";
+ els("summary").replaceChildren(textEl("strong","",topics.length+" 篇"),textEl("span","",modules.length+" 个模块"),textEl("span","",total+" 道练习"));
+ function row(id,title,subtitle,count,num,extraClass){
+  const b=document.createElement("button");b.type="button";b.className="module"+(extraClass?" "+extraClass:"");
   const number=textEl("div","number",num),body=textEl("div","moduleText","");
   body.append(textEl("div","moduleName",title),textEl("div","moduleSub",subtitle));
   b.append(number,body,textEl("div","count",count+"题"),textEl("div","arrow","→"));
   b.addEventListener("click",()=>start(id));return b;
  }
- wrap.append(row("all","全部章节 · 综合复习","按顺序复习全部已学表达",total,"∑"));
- modules.forEach((m,i)=>wrap.append(row(m.id,m.title,m.subtitle,filtered(m).length,String(i+1).padStart(2,"0"))));
+ wrap.append(row("all","全部篇目 · 综合复习","跨篇目复习所有已经练过的表达",total,"∑"));
+ topics.forEach((topic,i)=>{
+  const related=modules.filter(m=>m.topicId===topic.id);
+  if(!related.length)return;
+  const section=textEl("section","topic","");
+  const head=textEl("button","topicHead","");head.type="button";head.setAttribute("aria-expanded",i===0?"true":"false");
+  const label=textEl("div","moduleText","");
+  label.append(textEl("div","topicTitle",topic.title),textEl("div","topicSubtitle",topic.subtitle));
+  const info=textEl("span","topicInfo",related.length+" 个小类");
+  const chevron=textEl("span","arrow",i===0?"⌄":"›");
+  head.append(label,info,chevron);
+  const body=textEl("div","topicBody"+(i===0?"":" topicClosed"),"");
+  const count=related.reduce((n,m)=>n+filtered(m).length,0);
+  body.append(row("topic:"+topic.id,"本篇综合练习",topic.description||"复习这篇文章下的全部句型",count,"↺","topicOverview"));
+  related.forEach((m,j)=>body.append(row(m.id,m.title,m.subtitle,filtered(m).length,String(j+1).padStart(2,"0"))));
+  head.addEventListener("click",()=>{
+   const open=body.classList.toggle("topicClosed");
+   head.setAttribute("aria-expanded",open?"false":"true");
+   chevron.textContent=open?"›":"⌄";
+  });
+  section.append(head,body);wrap.append(section);
+ });
 }
 function showHome(){els("catalog").classList.remove("hidden");els("practice").classList.add("hidden");els("home").classList.add("hidden");history.replaceState(null,"",location.pathname);renderCatalog();}
 function start(id,keepState=false){
@@ -101,7 +124,7 @@ function renderQuestion(){
  els("activeQuestion").classList.toggle("hidden",done);els("finished").classList.toggle("hidden",!done);
  if(done){els("finishedSummary").textContent="本轮共 "+list.length+" 题。可以重新练习，或回到目录选择其他章节。";return;}
  const q=list[pos];if(!q)return;
- els("modTitle").textContent=chosen==="all"?q.moduleTitle:modules.find(m=>m.id===chosen)?.title||"";
+ els("modTitle").textContent=chosen==="all"?q.moduleTitle:chosen.startsWith("topic:")?(topics.find(t=>t.id===chosen.slice(6))?.title+" / "+q.moduleTitle):modules.find(m=>m.id===chosen)?.title||"";
  els("stageName").textContent=stageNames[q.stage]||"迁移练习";
  els("counter").textContent=(pos+1)+" / "+list.length;
  els("progressFill").style.width=((pos+1)/list.length*100)+"%";
@@ -124,12 +147,14 @@ els("next").addEventListener("click",next);els("previous").addEventListener("cli
 els("restart").addEventListener("click",restart);els("again").addEventListener("click",restart);
 fetch("./data/questions.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("题库文件无法读取");return r.json()}).then(data=>{
  modules=Array.isArray(data.modules)?data.modules.filter(m=>Array.isArray(m.questions)):[];
+ topics=Array.isArray(data.topics)&&data.topics.length?data.topics:[{id:"default",title:"第01篇 · 已学内容",subtitle:"Präsentation"}];
+ modules.forEach(m=>{if(!m.topicId)m.topicId=topics[0].id;});
  if(!modules.length)throw Error("题库为空");
  const saved=restore();if(saved?.mode==="all")mode="all";
  document.querySelectorAll("[data-mode]").forEach(b=>b.classList.toggle("active",b.dataset.mode===mode));
  renderCatalog();
  const hash=decodeURIComponent(location.hash.slice(1));
- if(hash&&(hash==="all"||modules.some(m=>m.id===hash))){
+ if(hash&&(hash==="all"||(hash.startsWith("topic:")&&topics.some(t=>t.id===hash.slice(6)))||modules.some(m=>m.id===hash))){
    if(saved&&saved.chosen===hash){chosen=hash;list=getList(hash);pos=Math.min(Math.max(0,saved.pos||0),list.length-1);answers=saved.answers||{};revealed=saved.revealed||{};done=!!saved.done;start(hash,true)}
    else start(hash);
  }
