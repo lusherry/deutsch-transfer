@@ -1,0 +1,578 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-18",
+  "modules": [
+    {
+      "id": "housing-01",
+      "title": "01 · 住宿经历",
+      "subtitle": "zunächst ... später ...",
+      "questions": [
+        {
+          "id": "h1-q1",
+          "stage": "recall",
+          "zh": "在重庆上大学",
+          "de": "in Chongqing studieren"
+        },
+        {
+          "id": "h1-q2",
+          "stage": "recall",
+          "zh": "起初……后来……",
+          "de": "zunächst ... später ..."
+        },
+        {
+          "id": "h1-q3",
+          "stage": "recall",
+          "zh": "住在学生宿舍",
+          "de": "im Studentenwohnheim wohnen"
+        },
+        {
+          "id": "h1-q4",
+          "stage": "recall",
+          "zh": "住在一套出租公寓里",
+          "de": "in einer Mietwohnung wohnen"
+        },
+        {
+          "id": "h1-q5",
+          "stage": "recall",
+          "zh": "在校园外",
+          "de": "außerhalb des Campus"
+        },
+        {
+          "id": "h1-q6",
+          "stage": "rebuild",
+          "zh": "我曾在重庆上大学。",
+          "de": "Ich habe in Chongqing studiert."
+        },
+        {
+          "id": "h1-q7",
+          "stage": "rebuild",
+          "zh": "起初我住在学生宿舍。",
+          "de": "Zunächst habe ich im Studentenwohnheim gewohnt."
+        },
+        {
+          "id": "h1-q8",
+          "stage": "rebuild",
+          "zh": "后来住在校外的一套出租公寓里。",
+          "de": "Später habe ich in einer Mietwohnung außerhalb des Campus gewohnt."
+        },
+        {
+          "id": "h1-q9",
+          "stage": "rebuild",
+          "zh": "起初我住在学生宿舍，后来住在校外的一套出租公寓里。",
+          "de": "Zunächst habe ich im Studentenwohnheim gewohnt, später in einer Mietwohnung außerhalb des Campus."
+        },
+        {
+          "id": "h1-q10",
+          "stage": "rebuild",
+          "zh": "我曾在重庆上大学。起初我住在学生宿舍，后来住在校外的一套出租公寓里。",
+          "de": "Ich habe in Chongqing studiert. Zunächst habe ich im Studentenwohnheim gewohnt, später in einer Mietwohnung außerhalb des Campus."
+        },
+        {
+          "id": "h1-q11",
+          "stage": "transfer",
+          "zh": "我曾在北京上大学。",
+          "de": "Ich habe in Peking studiert."
+        },
+        {
+          "id": "h1-q12",
+          "stage": "transfer",
+          "zh": "起初我和父母住在一起，后来住在学生宿舍。",
+          "de": "Zunächst habe ich bei meinen Eltern gewohnt, später im Studentenwohnheim."
+        },
+        {
+          "id": "h1-q13",
+          "stage": "transfer",
+          "zh": "起初我学习英语，后来学习德语。",
+          "de": "Zunächst habe ich Englisch gelernt, später Deutsch."
+        },
+        {
+          "id": "h1-q14",
+          "stage": "transfer",
+          "zh": "我曾在上海工作。起初住在市中心，后来住在城外。",
+          "de": "Ich habe in Shanghai gearbeitet. Zunächst habe ich im Stadtzentrum gewohnt, später außerhalb der Stadt."
+        }
+      ]
+    },
+    {
+      "id": "housing-02",
+      "title": "02 · 住宿费用对比",
+      "subtitle": "für A ... , für B dagegen ...",
+      "questions": [
+        {
+          "id": "h2-q1",
+          "stage": "recall",
+          "zh": "为学生宿舍付钱",
+          "de": "für das Wohnheim bezahlen"
+        },
+        {
+          "id": "h2-q2",
+          "stage": "recall",
+          "zh": "大约1000元",
+          "de": "ungefähr 1.000 Yuan"
+        },
+        {
+          "id": "h2-q3",
+          "stage": "recall",
+          "zh": "每学期",
+          "de": "pro Semester"
+        },
+        {
+          "id": "h2-q4",
+          "stage": "recall",
+          "zh": "相比之下，为出租公寓……",
+          "de": "für die Mietwohnung dagegen"
+        },
+        {
+          "id": "h2-q5",
+          "stage": "recall",
+          "zh": "每个月1000元",
+          "de": "1.000 Yuan im Monat"
+        },
+        {
+          "id": "h2-q6",
+          "stage": "rebuild",
+          "zh": "我支付了大约1000元。",
+          "de": "Ich habe ungefähr 1.000 Yuan bezahlt."
+        },
+        {
+          "id": "h2-q7",
+          "stage": "rebuild",
+          "zh": "住宿舍时，我每学期支付约1000元。",
+          "de": "Für das Wohnheim habe ich ungefähr 1.000 Yuan pro Semester bezahlt."
+        },
+        {
+          "id": "h2-q8",
+          "stage": "rebuild",
+          "zh": "相比之下，租房时我每个月支付约1000元。",
+          "de": "Für die Mietwohnung habe ich dagegen ungefähr 1.000 Yuan im Monat bezahlt."
+        },
+        {
+          "id": "h2-q9",
+          "stage": "rebuild",
+          "zh": "住宿舍时，我每学期支付约1000元；而租房时，我每个月支付约1000元。",
+          "de": "Für das Wohnheim habe ich ungefähr 1.000 Yuan pro Semester bezahlt, für die Mietwohnung dagegen ungefähr 1.000 Yuan im Monat."
+        },
+        {
+          "id": "h2-q10",
+          "stage": "transfer",
+          "zh": "我每个月为房间支付大约500欧元。",
+          "de": "Für mein Zimmer bezahle ich ungefähr 500 Euro im Monat."
+        },
+        {
+          "id": "h2-q11",
+          "stage": "transfer",
+          "zh": "学生宿舍很便宜，而出租公寓则很贵。",
+          "de": "Das Wohnheim ist günstig, die Mietwohnung dagegen teuer."
+        },
+        {
+          "id": "h2-q12",
+          "stage": "transfer",
+          "zh": "我每个月为交通支付50欧元，而为食物支付200欧元。",
+          "de": "Für Verkehrsmittel bezahle ich 50 Euro im Monat, für Lebensmittel dagegen 200 Euro."
+        }
+      ]
+    },
+    {
+      "id": "housing-03",
+      "title": "03 · 从经历得出认识",
+      "subtitle": "Diese Erfahrung hat mir gezeigt, wie ...",
+      "questions": [
+        {
+          "id": "h3-q1",
+          "stage": "recall",
+          "zh": "这个差别",
+          "de": "dieser Unterschied"
+        },
+        {
+          "id": "h3-q2",
+          "stage": "recall",
+          "zh": "这个差别让我认识到……",
+          "de": "Dieser Unterschied hat mir gezeigt, ..."
+        },
+        {
+          "id": "h3-q3",
+          "stage": "recall",
+          "zh": "多少钱",
+          "de": "wie viel Geld"
+        },
+        {
+          "id": "h3-q4",
+          "stage": "recall",
+          "zh": "通过住在学生宿舍",
+          "de": "durch das Wohnen im Studentenwohnheim"
+        },
+        {
+          "id": "h3-q5",
+          "stage": "recall",
+          "zh": "节省很多钱",
+          "de": "viel Geld sparen"
+        },
+        {
+          "id": "h3-q6",
+          "stage": "rebuild",
+          "zh": "大学生能够节省很多钱。",
+          "de": "Studierende können viel Geld sparen."
+        },
+        {
+          "id": "h3-q7",
+          "stage": "rebuild",
+          "zh": "大学生通过住在学生宿舍能够节省很多钱。",
+          "de": "Studierende können durch das Wohnen im Studentenwohnheim viel Geld sparen."
+        },
+        {
+          "id": "h3-q8",
+          "stage": "rebuild",
+          "zh": "这个差别让我认识到大学生能够节省多少钱。",
+          "de": "Dieser Unterschied hat mir gezeigt, wie viel Geld Studierende sparen können."
+        },
+        {
+          "id": "h3-q9",
+          "stage": "rebuild",
+          "zh": "这个差别让我认识到，大学生通过住在学生宿舍能够节省多少钱。",
+          "de": "Dieser Unterschied hat mir gezeigt, wie viel Geld Studierende durch das Wohnen im Studentenwohnheim sparen können."
+        },
+        {
+          "id": "h3-q10",
+          "stage": "transfer",
+          "zh": "这段经历让我认识到，时间有多重要。",
+          "de": "Diese Erfahrung hat mir gezeigt, wie wichtig Zeit ist."
+        },
+        {
+          "id": "h3-q11",
+          "stage": "transfer",
+          "zh": "这次实习让我认识到，团队合作很重要。",
+          "de": "Dieses Praktikum hat mir gezeigt, dass Teamarbeit wichtig ist."
+        },
+        {
+          "id": "h3-q12",
+          "stage": "transfer",
+          "zh": "通过定期学习，学生能够取得更好的成绩。",
+          "de": "Durch regelmäßiges Lernen können Studierende bessere Leistungen erzielen."
+        }
+      ]
+    },
+    {
+      "id": "housing-04",
+      "title": "04 · 开头与个人立场",
+      "subtitle": "Zunächst gehe ich darauf ein, ...",
+      "questions": [
+        {
+          "id": "h4-q1",
+          "stage": "recall",
+          "zh": "首先我会谈到……",
+          "de": "Zunächst gehe ich darauf ein, ..."
+        },
+        {
+          "id": "h4-q2",
+          "stage": "rebuild",
+          "zh": "今天我想谈谈住在大学校园里的问题。",
+          "de": "Heute möchte ich über das Wohnen auf dem Campus sprechen."
+        },
+        {
+          "id": "h4-q3",
+          "stage": "rebuild",
+          "zh": "首先，我会谈谈自己喜欢哪些方面、不喜欢哪些方面。",
+          "de": "Zunächst gehe ich darauf ein, was mir daran gefallen würde und was nicht."
+        },
+        {
+          "id": "h4-q4",
+          "stage": "rebuild",
+          "zh": "接着我会讲述自己的经历，并在最后作出总结。",
+          "de": "Anschließend berichte ich von meinen eigenen Erfahrungen und ziehe zum Schluss ein Fazit."
+        },
+        {
+          "id": "h4-q5",
+          "stage": "rebuild",
+          "zh": "总体来说，我愿意住在校园里。",
+          "de": "Grundsätzlich würde ich gerne auf dem Campus wohnen."
+        },
+        {
+          "id": "h4-q6",
+          "stage": "transfer",
+          "zh": "首先，我会讨论住在大城市的哪些方面会让我喜欢，哪些方面不会。",
+          "de": "Zunächst gehe ich darauf ein, was mir am Leben in einer Großstadt gefallen würde und was nicht."
+        },
+        {
+          "id": "h4-q7",
+          "stage": "transfer",
+          "zh": "接下来，我会介绍自己的学习经历，并在最后作出总结。",
+          "de": "Anschließend berichte ich von meinen eigenen Lernerfahrungen und ziehe zum Schluss ein Fazit."
+        },
+        {
+          "id": "h4-q8",
+          "stage": "transfer",
+          "zh": "总体来说，我愿意在学生宿舍里生活。",
+          "de": "Grundsätzlich würde ich gerne im Studentenwohnheim leben."
+        }
+      ]
+    },
+    {
+      "id": "housing-05",
+      "title": "05 · 多人宿舍的缺点",
+      "subtitle": "Was mir weniger gefallen würde, ist ...",
+      "questions": [
+        {
+          "id": "h5-q1",
+          "stage": "recall",
+          "zh": "我不太喜欢的一点会是……",
+          "de": "Was mir weniger gefallen würde, ist ..."
+        },
+        {
+          "id": "h5-q2",
+          "stage": "recall",
+          "zh": "当一些人……时，另一些人却……",
+          "de": "Während einige ..., ... andere ..."
+        },
+        {
+          "id": "h5-q3",
+          "stage": "rebuild",
+          "zh": "我不太喜欢的一点会是多人宿舍缺乏安静的环境。",
+          "de": "Was mir weniger gefallen würde, ist die fehlende Ruhe in einem Mehrbettzimmer."
+        },
+        {
+          "id": "h5-q4",
+          "stage": "rebuild",
+          "zh": "室友们往往有不同的作息规律。",
+          "de": "Die Mitbewohner haben oft unterschiedliche Tagesrhythmen."
+        },
+        {
+          "id": "h5-q5",
+          "stage": "rebuild",
+          "zh": "当一些人想学习或者睡觉时，另一些人可能还在房间里聊天。",
+          "de": "Während einige lernen oder schlafen möchten, unterhalten sich andere vielleicht noch im Zimmer."
+        },
+        {
+          "id": "h5-q6",
+          "stage": "rebuild",
+          "zh": "这样就很难集中注意力或得到充分休息。",
+          "de": "Dadurch fällt es schwer, sich zu konzentrieren oder sich richtig auszuruhen."
+        },
+        {
+          "id": "h5-q7",
+          "stage": "transfer",
+          "zh": "我不太喜欢的一点会是大城市缺乏安静的环境。",
+          "de": "Was mir weniger gefallen würde, ist die fehlende Ruhe in einer Großstadt."
+        },
+        {
+          "id": "h5-q8",
+          "stage": "transfer",
+          "zh": "当一些学生准备考试时，另一些人可能还在休息。",
+          "de": "Während einige Studierende sich auf Prüfungen vorbereiten, machen andere vielleicht noch Pause."
+        },
+        {
+          "id": "h5-q9",
+          "stage": "transfer",
+          "zh": "这样就很难专心学习。",
+          "de": "Dadurch fällt es schwer, sich auf das Lernen zu konzentrieren."
+        }
+      ]
+    },
+    {
+      "id": "housing-06",
+      "title": "06 · 校园距离与时间",
+      "subtitle": "Ein klarer Vorteil sind ...",
+      "questions": [
+        {
+          "id": "h6-q1",
+          "stage": "recall",
+          "zh": "尽管如此，对我来说……有明显的优点",
+          "de": "Trotzdem hat ... für mich klare Vorteile."
+        },
+        {
+          "id": "h6-q2",
+          "stage": "recall",
+          "zh": "一个明显的优点是……（复数）",
+          "de": "Ein klarer Vorteil sind ..."
+        },
+        {
+          "id": "h6-q3",
+          "stage": "recall",
+          "zh": "这样就有更多时间做……",
+          "de": "So bleibt mehr Zeit zum ..."
+        },
+        {
+          "id": "h6-q4",
+          "stage": "rebuild",
+          "zh": "尽管如此，对我来说，住在校园里仍然有明显的优点。",
+          "de": "Trotzdem hat das Wohnen auf dem Campus für mich klare Vorteile."
+        },
+        {
+          "id": "h6-q5",
+          "stage": "rebuild",
+          "zh": "一个明显的优点是去上课的路程短。",
+          "de": "Ein klarer Vorteil sind die kurzen Wege zu den Vorlesungen."
+        },
+        {
+          "id": "h6-q6",
+          "stage": "rebuild",
+          "zh": "如果宿舍靠近教学楼，学生就可以步行去上课。",
+          "de": "Wenn das Wohnheim in der Nähe der Hörsäle liegt, können Studierende zu Fuß zu den Vorlesungen gehen."
+        },
+        {
+          "id": "h6-q7",
+          "stage": "rebuild",
+          "zh": "他们不必每天早上乘坐公交车或火车。",
+          "de": "Sie müssen nicht jeden Morgen Bus oder Bahn nehmen."
+        },
+        {
+          "id": "h6-q8",
+          "stage": "rebuild",
+          "zh": "这样早上就有更多时间睡觉，一天也会开始得更加轻松。",
+          "de": "So bleibt morgens mehr Zeit zum Schlafen, und der Tag beginnt entspannter."
+        },
+        {
+          "id": "h6-q9",
+          "stage": "transfer",
+          "zh": "一个明显的优点是较短的通勤路程。",
+          "de": "Ein klarer Vorteil sind die kurzen Wege zur Arbeit."
+        },
+        {
+          "id": "h6-q10",
+          "stage": "transfer",
+          "zh": "如果办公室离家很近，员工就可以步行去上班。",
+          "de": "Wenn das Büro in der Nähe der Wohnung liegt, können die Mitarbeiter zu Fuß zur Arbeit gehen."
+        },
+        {
+          "id": "h6-q11",
+          "stage": "transfer",
+          "zh": "这样就有更多时间阅读。",
+          "de": "So bleibt mehr Zeit zum Lesen."
+        },
+        {
+          "id": "h6-q12",
+          "stage": "transfer",
+          "zh": "因此，人们更容易集中注意力。",
+          "de": "Dadurch fällt es leichter, sich zu konzentrieren."
+        }
+      ]
+    },
+    {
+      "id": "housing-07",
+      "title": "07 · 住宿成本与家庭负担",
+      "subtitle": "sich etwas kaum leisten können",
+      "questions": [
+        {
+          "id": "h7-q1",
+          "stage": "recall",
+          "zh": "另一个优点是……（复数）",
+          "de": "Ein weiterer Vorteil sind ..."
+        },
+        {
+          "id": "h7-q2",
+          "stage": "recall",
+          "zh": "还没有稳定收入，几乎负担不起……",
+          "de": "noch kein regelmäßiges Einkommen haben und sich ... kaum leisten können"
+        },
+        {
+          "id": "h7-q3",
+          "stage": "recall",
+          "zh": "为某事花更少的钱",
+          "de": "weniger Geld für etwas ausgeben"
+        },
+        {
+          "id": "h7-q4",
+          "stage": "rebuild",
+          "zh": "另一个优点是较低的住宿费用。",
+          "de": "Ein weiterer Vorteil sind die geringeren Wohnkosten."
+        },
+        {
+          "id": "h7-q5",
+          "stage": "rebuild",
+          "zh": "许多大学生还没有稳定收入，几乎负担不起自己单独租房。",
+          "de": "Viele Studierende haben noch kein regelmäßiges Einkommen und können sich eine eigene Wohnung kaum leisten."
+        },
+        {
+          "id": "h7-q6",
+          "stage": "rebuild",
+          "zh": "学生宿舍的一个住宿名额通常比单独租住的公寓便宜。",
+          "de": "Ein Wohnheimplatz ist oft günstiger als eine eigene Mietwohnung."
+        },
+        {
+          "id": "h7-q7",
+          "stage": "rebuild",
+          "zh": "这样许多家庭就需要为住宿花更少的钱。",
+          "de": "So müssen viele Familien weniger Geld für die Unterkunft ausgeben."
+        },
+        {
+          "id": "h7-q8",
+          "stage": "transfer",
+          "zh": "另一个优点是较低的生活费用。",
+          "de": "Ein weiterer Vorteil sind die geringeren Lebenshaltungskosten."
+        },
+        {
+          "id": "h7-q9",
+          "stage": "transfer",
+          "zh": "许多年轻人还没有稳定收入，几乎负担不起自己买车。",
+          "de": "Viele junge Menschen haben noch kein regelmäßiges Einkommen und können sich ein eigenes Auto kaum leisten."
+        },
+        {
+          "id": "h7-q10",
+          "stage": "transfer",
+          "zh": "这样，许多学生就需要为交通支付更少的钱。",
+          "de": "So müssen viele Studierende weniger Geld für den Verkehr ausgeben."
+        }
+      ]
+    },
+    {
+      "id": "housing-08",
+      "title": "08 · 总结与优缺点权衡",
+      "subtitle": "Zusammenfassend ... wichtiger als ...",
+      "questions": [
+        {
+          "id": "h8-q1",
+          "stage": "recall",
+          "zh": "对我来说，A比B更重要",
+          "de": "A ist für mich wichtiger als B."
+        },
+        {
+          "id": "h8-q2",
+          "stage": "recall",
+          "zh": "总的来说，对我而言，A比B更重要（复数主语）",
+          "de": "Zusammenfassend sind für mich A wichtiger als B."
+        },
+        {
+          "id": "h8-q3",
+          "stage": "rebuild",
+          "zh": "对我来说，较短的路程比缺乏安静环境更重要。",
+          "de": "Die kurzen Wege sind für mich wichtiger als die fehlende Ruhe."
+        },
+        {
+          "id": "h8-q4",
+          "stage": "rebuild",
+          "zh": "对我来说，上课路程短和住宿费用低，比缺乏安静的环境更重要。",
+          "de": "Für mich sind die kurzen Wege und die geringeren Wohnkosten wichtiger als die fehlende Ruhe."
+        },
+        {
+          "id": "h8-q5",
+          "stage": "rebuild",
+          "zh": "总的来说，对我而言，上课路程短和住宿费用低，比缺乏安静的环境更重要。",
+          "de": "Zusammenfassend sind für mich die kurzen Wege und die geringeren Wohnkosten wichtiger als die fehlende Ruhe."
+        },
+        {
+          "id": "h8-q6",
+          "stage": "transfer",
+          "zh": "对我来说，空闲时间比金钱更重要。",
+          "de": "Freizeit ist für mich wichtiger als Geld."
+        },
+        {
+          "id": "h8-q7",
+          "stage": "transfer",
+          "zh": "对我来说，实践经验比好成绩更重要。",
+          "de": "Praktische Erfahrungen sind für mich wichtiger als gute Noten."
+        },
+        {
+          "id": "h8-q8",
+          "stage": "transfer",
+          "zh": "总的来说，对我而言，较低的生活费用比较大的住房更重要。",
+          "de": "Zusammenfassend sind für mich die geringeren Lebenshaltungskosten wichtiger als eine größere Wohnung."
+        },
+        {
+          "id": "h8-q9",
+          "stage": "transfer",
+          "zh": "对我来说，教学质量比学校的位置更重要。",
+          "de": "Die Unterrichtsqualität ist für mich wichtiger als die Lage der Schule."
+        }
+      ]
+    }
+  ]
+}
