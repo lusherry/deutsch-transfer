@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updatedAt": "2026-11-18",
   "modules": [
     {
@@ -605,6 +605,322 @@
         }
       ],
       "topicId": "campus-housing"
+    },
+    {
+      "id": "dw-wohnraum-01",
+      "topicId": "dw-bezahlbarer-wohnraum",
+      "title": "01 · 住房短缺与解决思路",
+      "subtitle": "bezahlbar · es fehlt an · entweder/oder · viel zu · an einer Lösung arbeiten",
+      "questions": [
+        {
+          "id": "dw1-1-r",
+          "stage": "recall",
+          "zh": "可负担住房",
+          "de": "bezahlbarer Wohnraum"
+        },
+        {
+          "id": "dw1-1-t",
+          "stage": "transfer",
+          "zh": "许多城市缺乏可负担住房。",
+          "de": "In vielen Städten fehlt es an bezahlbarem Wohnraum."
+        },
+        {
+          "id": "dw1-2-r",
+          "stage": "recall",
+          "zh": "缺乏资金。",
+          "de": "Es fehlt an Geld."
+        },
+        {
+          "id": "dw1-2-t",
+          "stage": "transfer",
+          "zh": "许多学校缺乏合格教师。",
+          "de": "In vielen Schulen fehlt es an qualifizierten Lehrkräften."
+        },
+        {
+          "id": "dw1-3-r",
+          "stage": "recall",
+          "zh": "要么……要么……",
+          "de": "entweder ... oder ..."
+        },
+        {
+          "id": "dw1-3-t",
+          "stage": "transfer",
+          "zh": "学生要么住在学生宿舍，要么租自己的公寓。",
+          "de": "Studierende wohnen entweder im Studentenwohnheim oder mieten eine eigene Wohnung."
+        },
+        {
+          "id": "dw1-4-r",
+          "stage": "recall",
+          "zh": "实在太贵",
+          "de": "viel zu teuer"
+        },
+        {
+          "id": "dw1-4-t",
+          "stage": "transfer",
+          "zh": "对于许多家庭来说，房租实在太高了。",
+          "de": "Für viele Familien ist die Miete viel zu hoch."
+        },
+        {
+          "id": "dw1-5-r",
+          "stage": "recall",
+          "zh": "致力于寻找解决方案",
+          "de": "an einer Lösung arbeiten"
+        },
+        {
+          "id": "dw1-5-t",
+          "stage": "transfer",
+          "zh": "这座城市正在努力解决住房问题。",
+          "de": "Die Stadt arbeitet an einer Lösung für das Wohnungsproblem."
+        }
+      ]
+    },
+    {
+      "id": "dw-wohnraum-02",
+      "topicId": "dw-bezahlbarer-wohnraum",
+      "title": "02 · 条件、观点与政策行动",
+      "subtitle": "Wer ... · kaum · zum Ausdruck bringen · zwingen · bisher",
+      "questions": [
+        {
+          "id": "dw2-1-r",
+          "stage": "recall",
+          "zh": "在柏林找出租公寓的人需要很大的耐心。",
+          "de": "Wer in Berlin eine Mietwohnung sucht, braucht viel Geduld."
+        },
+        {
+          "id": "dw2-1-t",
+          "stage": "transfer",
+          "zh": "想学习一门外语的人需要很大的耐心。",
+          "de": "Wer eine Fremdsprache lernen möchte, braucht viel Geduld."
+        },
+        {
+          "id": "dw2-2-r",
+          "stage": "recall",
+          "zh": "几乎没有房源。",
+          "de": "Es gibt kaum Angebote."
+        },
+        {
+          "id": "dw2-2-t",
+          "stage": "transfer",
+          "zh": "在这座小城市里，几乎没有文化活动可供选择。",
+          "de": "In dieser kleinen Stadt gibt es kaum kulturelle Angebote."
+        },
+        {
+          "id": "dw2-3-r",
+          "stage": "recall",
+          "zh": "表达自己的观点",
+          "de": "seine Meinung zum Ausdruck bringen"
+        },
+        {
+          "id": "dw2-3-t",
+          "stage": "transfer",
+          "zh": "许多大学生表达了对学习条件的不满。",
+          "de": "Viele Studierende bringen ihre Unzufriedenheit mit den Studienbedingungen zum Ausdruck."
+        },
+        {
+          "id": "dw2-4-r",
+          "stage": "recall",
+          "zh": "迫使某人做某事",
+          "de": "jemanden dazu zwingen, etwas zu tun"
+        },
+        {
+          "id": "dw2-4-t",
+          "stage": "transfer",
+          "zh": "高昂的生活成本迫使许多大学生在学习期间兼职。",
+          "de": "Hohe Lebenshaltungskosten zwingen viele Studierende dazu, neben dem Studium zu arbeiten."
+        },
+        {
+          "id": "dw2-5-r",
+          "stage": "recall",
+          "zh": "到目前为止，什么都没有发生。",
+          "de": "Bisher ist nichts passiert."
+        },
+        {
+          "id": "dw2-5-t",
+          "stage": "transfer",
+          "zh": "政府宣布了改革，但迄今还没有实际进展。",
+          "de": "Die Regierung hat Reformen angekündigt, aber bisher ist nichts passiert."
+        }
+      ]
+    },
+    {
+      "id": "dw-wohnraum-03",
+      "topicId": "dw-bezahlbarer-wohnraum",
+      "title": "03 · 重要性、比较与公共资源",
+      "subtitle": "entscheidend · gegen · weniger · gehören · gefördert",
+      "questions": [
+        {
+          "id": "dw3-1-r",
+          "stage": "recall",
+          "zh": "对某人而言至关重要",
+          "de": "für jemanden entscheidend sein"
+        },
+        {
+          "id": "dw3-1-t",
+          "stage": "transfer",
+          "zh": "对许多大学生来说，选择留学城市时生活成本是关键因素。",
+          "de": "Für viele Studierende sind die Lebenshaltungskosten bei der Studienortwahl entscheidend."
+        },
+        {
+          "id": "dw3-2-r",
+          "stage": "recall",
+          "zh": "采取措施应对歧视",
+          "de": "etwas gegen Diskriminierung tun"
+        },
+        {
+          "id": "dw3-2-t",
+          "stage": "transfer",
+          "zh": "大学应该采取措施应对社会不平等。",
+          "de": "Universitäten sollten etwas gegen soziale Ungleichheit tun."
+        },
+        {
+          "id": "dw3-3-r",
+          "stage": "recall",
+          "zh": "比……少",
+          "de": "weniger ... als ..."
+        },
+        {
+          "id": "dw3-3-t",
+          "stage": "transfer",
+          "zh": "这所大学收到的申请比去年少。",
+          "de": "Diese Universität hat weniger Bewerbungen als im letzten Jahr."
+        },
+        {
+          "id": "dw3-4-r",
+          "stage": "recall",
+          "zh": "这栋房子属于市政府。",
+          "de": "Das Haus gehört der Stadt."
+        },
+        {
+          "id": "dw3-4-t",
+          "stage": "transfer",
+          "zh": "这些住房属于一家非营利组织。",
+          "de": "Die Wohnungen gehören einer gemeinnützigen Organisation."
+        },
+        {
+          "id": "dw3-5-r",
+          "stage": "recall",
+          "zh": "这些住房获得公共资助。",
+          "de": "Die Wohnungen sind öffentlich gefördert."
+        },
+        {
+          "id": "dw3-5-t",
+          "stage": "transfer",
+          "zh": "这些文化项目获得公共资助。",
+          "de": "Diese Kulturprojekte sind öffentlich gefördert."
+        }
+      ]
+    },
+    {
+      "id": "dw-wohnraum-04",
+      "topicId": "dw-bezahlbarer-wohnraum",
+      "title": "04 · 比例、因果与政策回应",
+      "subtitle": "über die Hälfte · dadurch bleibt · darauf reagieren · zwar/aber",
+      "questions": [
+        {
+          "id": "dw4-1-r",
+          "stage": "recall",
+          "zh": "超过一半的人口",
+          "de": "über die Hälfte der Bevölkerung"
+        },
+        {
+          "id": "dw4-1-t",
+          "stage": "transfer",
+          "zh": "超过一半的大学生住在学生宿舍里。",
+          "de": "Über die Hälfte der Studierenden wohnt im Studentenwohnheim."
+        },
+        {
+          "id": "dw4-2-r",
+          "stage": "recall",
+          "zh": "因此，住房价格保持相对低廉。",
+          "de": "Dadurch bleibt Wohnraum relativ günstig."
+        },
+        {
+          "id": "dw4-2-t",
+          "stage": "transfer",
+          "zh": "这样，公共交通得以保持价格低廉。",
+          "de": "Dadurch bleibt der öffentliche Nahverkehr günstig."
+        },
+        {
+          "id": "dw4-3-r",
+          "stage": "recall",
+          "zh": "政府针对越来越多大学生面临经济困难的情况作出回应。",
+          "de": "Die Regierung reagiert darauf, dass immer mehr Studierende finanzielle Schwierigkeiten haben."
+        },
+        {
+          "id": "dw4-3-t",
+          "stage": "transfer",
+          "zh": "大学针对越来越多学生负担不起房租的情况作出回应。",
+          "de": "Die Universität reagiert darauf, dass immer mehr Studierende sich die Miete nicht leisten können."
+        },
+        {
+          "id": "dw4-4-r",
+          "stage": "recall",
+          "zh": "虽然有社会住房，但数量远远不够。",
+          "de": "Sozialwohnungen gibt es zwar, aber viel zu wenige."
+        },
+        {
+          "id": "dw4-4-t",
+          "stage": "transfer",
+          "zh": "虽然有学生宿舍，但数量远远不够。",
+          "de": "Es gibt zwar Studentenwohnheime, aber viel zu wenige."
+        }
+      ]
+    },
+    {
+      "id": "dw-wohnraum-05",
+      "topicId": "dw-bezahlbarer-wohnraum",
+      "title": "05 · 负担能力、供需与数据论证",
+      "subtitle": "sich leisten · vorbehalten · Nachfrage/Angebot · Wie wichtig",
+      "questions": [
+        {
+          "id": "dw5-1-r",
+          "stage": "recall",
+          "zh": "负担得起一套公寓",
+          "de": "sich eine Wohnung leisten können"
+        },
+        {
+          "id": "dw5-1-t",
+          "stage": "transfer",
+          "zh": "许多家庭负担不起大城市里的高房租。",
+          "de": "Viele Familien können sich die hohen Mieten in Großstädten nicht leisten."
+        },
+        {
+          "id": "dw5-2-r",
+          "stage": "recall",
+          "zh": "这些大学名额专门留给特别符合资格的申请者。",
+          "de": "Diese Studienplätze sind besonders qualifizierten Bewerbern vorbehalten."
+        },
+        {
+          "id": "dw5-2-t",
+          "stage": "transfer",
+          "zh": "这些奖学金专门留给经济困难的学生。",
+          "de": "Diese Stipendien sind Studierenden mit finanziellen Schwierigkeiten vorbehalten."
+        },
+        {
+          "id": "dw5-3-r",
+          "stage": "recall",
+          "zh": "需求远远超过供给。",
+          "de": "Die Nachfrage übersteigt das Angebot bei Weitem."
+        },
+        {
+          "id": "dw5-3-t",
+          "stage": "transfer",
+          "zh": "学生宿舍名额的需求远远超过供应。",
+          "de": "Die Nachfrage nach Wohnheimplätzen übersteigt das Angebot bei Weitem."
+        },
+        {
+          "id": "dw5-4-r",
+          "stage": "recall",
+          "zh": "数据表明，这项供应有多么重要。",
+          "de": "Wie wichtig das Angebot ist, zeigen die Zahlen."
+        },
+        {
+          "id": "dw5-4-t",
+          "stage": "transfer",
+          "zh": "许多研究表明，这个问题有多么严重。",
+          "de": "Wie groß das Problem ist, zeigen zahlreiche Studien."
+        }
+      ]
     }
   ],
   "topics": [
@@ -613,6 +929,12 @@
       "title": "第01篇 · 住在大学校园",
       "subtitle": "Wohnen auf dem Campus",
       "description": "校园住宿的优缺点、个人经历与总结"
+    },
+    {
+      "id": "dw-bezahlbarer-wohnraum",
+      "title": "第02篇 · 人人负担得起的住房",
+      "subtitle": "DW Top-Thema 01｜Bezahlbarer Wohnraum für alle – aber wie?",
+      "description": "住房短缺、公共政策与社会公平；精读中的23个值得记忆的表达"
     }
   ]
 }
