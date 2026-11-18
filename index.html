@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fcfcf8">
+<title>德语迁移练习册</title>
+<style>
+:root{font-family:system-ui,-apple-system,"PingFang SC","Noto Sans SC",sans-serif;color:#252b2b;background:#fcfcf8;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}.wrap{max-width:880px;margin:0 auto;padding:28px 20px 80px}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:26px}
+.brand{font-size:14px;font-weight:750;letter-spacing:.055em}.eyebrow{font-size:12px;color:#79837d}
+h1{font-size:clamp(26px,5vw,38px);letter-spacing:-.04em;margin:6px 0 10px;font-weight:720}
+p{line-height:1.7;color:#67716d;margin:0}.sub{font-size:14px;margin-bottom:24px}
+button{font:inherit;cursor:pointer;border-radius:12px;border:1px solid #dfe5df;background:#fff;color:#30413b;padding:11px 15px}
+button:hover{border-color:#8eafa0}button:focus-visible,textarea:focus-visible{outline:3px solid #aed8c1;outline-offset:2px}
+.primary{background:#284a3d;border-color:#284a3d;color:#fff}.primary:hover{background:#376451}
+.ghost{background:transparent;border-color:transparent}.small{font-size:13px;padding:8px 10px}
+.mode{display:flex;gap:5px;background:#eff3ed;border-radius:13px;padding:5px;width:max-content;max-width:100%;flex-wrap:wrap}
+.mode button{border:0;background:transparent;padding:9px 13px;font-size:13px}.mode button.active{background:white;box-shadow:0 1px 5px #203c2b19}
+.summary{display:flex;align-items:center;gap:12px;margin:15px 0 24px;color:#68776e;font-size:13px}
+.summary strong{color:#2e4b3d;font-size:20px}.summary span{background:#e4eee5;border-radius:16px;padding:4px 10px}
+.catalog{display:grid;gap:11px}.module{display:flex;text-align:left;gap:14px;align-items:center;background:white;border:1px solid #e3e9e3;border-radius:17px;padding:19px;width:100%;transition:transform .12s,background .12s}
+.module:hover{background:#f8fbf7;transform:translateY(-1px)}.number{flex:none;width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:#e3efde;color:#365d49;font-weight:700}
+.module:nth-child(4n+2) .number{background:#fff1d9;color:#9b652b}.module:nth-child(4n+3) .number{background:#e0eef8;color:#416f92}.module:nth-child(4n+4) .number{background:#f7e7e9;color:#995869}
+.moduleText{flex:1;min-width:0}.moduleName{font-size:16px;font-weight:680}.moduleSub{font-size:13px;color:#777e79;margin-top:4px;overflow-wrap:anywhere}
+.count{flex:none;color:#87928a;font-size:13px}.arrow{font-size:18px;color:#87928a}
+.practice{max-width:710px;margin:0 auto}.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.back{font-size:13px}
+.progress{height:6px;background:#ebf0e9;border-radius:8px;overflow:hidden;margin:18px 0 27px}.progressFill{height:100%;background:#6b9e82;transition:width .2s}
+.stage{color:#7b8c80;font-size:13px;margin-bottom:7px}.question{background:#f1f5ef;border-radius:18px;padding:26px 24px;margin-bottom:20px;min-height:156px}
+.questionLabel{font-size:12px;color:#698071;margin-bottom:13px}.questionText{font-size:clamp(19px,4vw,25px);font-weight:630;line-height:1.6;white-space:pre-wrap}
+textarea{resize:vertical;min-height:128px;width:100%;border:1px solid #d9e4d9;border-radius:14px;background:white;padding:17px;font:inherit;font-size:17px;line-height:1.65;color:#273a30}
+.answer{padding:18px 20px;border-radius:14px;border:1px solid #d7e7dc;background:#f9fbf8;margin:16px 0;line-height:1.8;overflow-wrap:anywhere}
+.answer b{color:#32634c}.hint{color:#8b8c86;font-size:12px;line-height:1.6;margin-top:8px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.actions button{flex:1;min-width:120px}.finish{text-align:center;padding:46px 25px;background:#f2f6ef;border-radius:20px}
+footer{margin-top:42px;padding-top:20px;border-top:1px solid #e9eee9;font-size:12px;color:#9aa59c}
+.loading{padding:25px;color:#768378}.hidden{display:none!important}
+@media(max-width:520px){.wrap{padding:20px 14px 70px}.module{padding:15px 12px;gap:10px}.count{font-size:12px}.question{padding:20px 17px}.actions button{min-width:100px}.summary{gap:8px;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header><div class="brand">德语迁移练习册 <span style="color:#87a795">/ Deutsch</span></div><button id="home" class="ghost small hidden">← 返回目录</button></header>
+<div id="catalog">
+ <div class="eyebrow">SPRACHTRAINING · 持续积累</div><h1>从理解到独立表达</h1>
+ <p class="sub">按主题选择练习，先看中文独立写德语，再核对参考答案。每一次新练习都可以继续加入这里。</p>
+ <div class="mode" id="catalogMode"><button data-mode="transfer" class="active">仅迁移练习</button><button data-mode="all">完整检测</button></div>
+ <div id="summary" class="summary"></div><div id="modules" class="catalog"><div class="loading">正在载入练习题库……</div></div>
+</div>
+<div id="practice" class="practice hidden">
+ <div class="topline"><div><div class="eyebrow" id="modTitle"></div><div class="stage" id="stageName"></div></div><div class="eyebrow" id="counter"></div></div>
+ <div class="mode" id="practiceMode" style="margin-bottom:6px"><button data-mode="transfer">仅迁移练习</button><button data-mode="all">完整检测</button></div>
+ <div class="progress"><div class="progressFill" id="progressFill"></div></div>
+ <div id="activeQuestion">
+  <div class="question"><div class="questionLabel">请独立用德语表达 · 无提示</div><div class="questionText" id="prompt"></div></div>
+  <textarea id="userAnswer" spellcheck="false" placeholder="在这里写德语……" aria-label="你的德语答案"></textarea>
+  <div id="refAnswer" class="answer hidden"><div><b id="answerStatus">参考答案</b></div><div id="reference" style="margin-top:7px"></div><div class="hint">这里只按参考答案进行文本匹配；其他自然、正确的德语表达也可能成立。</div></div>
+  <div class="actions"><button id="reveal">检查答案</button><button id="next" class="primary">下一题 →</button></div>
+  <div class="actions"><button id="previous" class="ghost">← 上一题</button><button id="restart" class="ghost">重新练习</button></div>
+ </div>
+ <div id="finished" class="finish hidden"><div style="font-size:29px">✓</div><h1 style="font-size:28px">完成本轮练习</h1><p id="finishedSummary"></p><div class="actions" style="justify-content:center"><button id="again" class="primary">再练一遍</button><button id="finishHome">返回目录</button></div></div>
+</div>
+<footer>题库由你实际练习的德语句型组成 · 练习记录仅保存在此浏览器 · 版本 1.0</footer>
+</main>
+<script>
+(function(){
+"use strict";
+const els=id=>document.getElementById(id);
+let modules=[], mode="transfer", chosen="all", list=[], pos=0, answers={}, revealed={}, done=false;
+const stageNames={recall:"第一阶段 · 语块回忆",rebuild:"第二阶段 · 原句重组",transfer:"第三阶段 · 迁移练习"};
+const normalize=s=>String(s||"").normalize("NFC").trim().replace(/\s+/g," ");
+const storageKey="deutsch-transfer-practice-v1";
+function save(){
+ try{const state={mode,chosen,pos,answers,revealed,done};localStorage.setItem(storageKey,JSON.stringify(state));}catch(_){}
+}
+function restore(){try{return JSON.parse(localStorage.getItem(storageKey)||"null");}catch(_){return null;}}
+function setMode(m){mode=m;document.querySelectorAll("[data-mode]").forEach(b=>{b.classList.toggle("active",b.dataset.mode===mode);b.setAttribute("aria-pressed",String(b.dataset.mode===mode));});renderCatalog();if(!els("practice").classList.contains("hidden")){start(chosen);}save();}
+function filtered(m){return m.questions.filter(q=>mode==="all"||q.stage==="transfer");}
+function getList(id){return (id==="all"?modules:modules.filter(m=>m.id===id)).flatMap(m=>filtered(m).map(q=>({...q,moduleTitle:m.title})))}
+function textEl(tag,cl,txt){const el=document.createElement(tag);if(cl)el.className=cl;el.textContent=txt;return el;}
+function renderCatalog(){
+ const total=modules.reduce((n,m)=>n+filtered(m).length,0),wrap=els("modules");wrap.replaceChildren();
+ els("summary").replaceChildren(textEl("strong","",modules.length+" 组"),textEl("span","",total+" 道练习"));
+ function row(id,title,subtitle,count,num){
+  const b=document.createElement("button");b.type="button";b.className="module";
+  const number=textEl("div","number",num),body=textEl("div","moduleText","");
+  body.append(textEl("div","moduleName",title),textEl("div","moduleSub",subtitle));
+  b.append(number,body,textEl("div","count",count+"题"),textEl("div","arrow","→"));
+  b.addEventListener("click",()=>start(id));return b;
+ }
+ wrap.append(row("all","全部章节 · 综合复习","按顺序复习全部已学表达",total,"∑"));
+ modules.forEach((m,i)=>wrap.append(row(m.id,m.title,m.subtitle,filtered(m).length,String(i+1).padStart(2,"0"))));
+}
+function showHome(){els("catalog").classList.remove("hidden");els("practice").classList.add("hidden");els("home").classList.add("hidden");history.replaceState(null,"",location.pathname);renderCatalog();}
+function start(id,keepState=false){
+ chosen=id;list=getList(id);if(!keepState){pos=0;answers={};revealed={};done=false;}
+ if(!list.length){showHome();return;}
+ els("catalog").classList.add("hidden");els("practice").classList.remove("hidden");els("home").classList.remove("hidden");
+ history.replaceState(null,"","#"+encodeURIComponent(id));renderQuestion();save();window.scrollTo({top:0,behavior:"instant"});
+}
+function renderQuestion(){
+ els("activeQuestion").classList.toggle("hidden",done);els("finished").classList.toggle("hidden",!done);
+ if(done){els("finishedSummary").textContent="本轮共 "+list.length+" 题。可以重新练习，或回到目录选择其他章节。";return;}
+ const q=list[pos];if(!q)return;
+ els("modTitle").textContent=chosen==="all"?q.moduleTitle:modules.find(m=>m.id===chosen)?.title||"";
+ els("stageName").textContent=stageNames[q.stage]||"迁移练习";
+ els("counter").textContent=(pos+1)+" / "+list.length;
+ els("progressFill").style.width=((pos+1)/list.length*100)+"%";
+ els("prompt").textContent=q.zh;els("userAnswer").value=answers[q.id]||"";
+ els("refAnswer").classList.toggle("hidden",!revealed[q.id]);els("reference").textContent=q.de;
+ const match=normalize(answers[q.id])===normalize(q.de);
+ els("answerStatus").textContent=match?"与参考答案一致":"参考答案";
+ els("reveal").textContent=revealed[q.id]?"隐藏答案":"检查答案";
+ els("next").textContent=pos+1===list.length?"完成检测 →":"下一题 →";
+ els("previous").disabled=pos===0;save();
+}
+function next(){if(pos+1===list.length){done=true;}else pos++;renderQuestion();window.scrollTo({top:0,behavior:"smooth"});}
+function previous(){if(pos>0){pos--;done=false;renderQuestion();}}
+function restart(){pos=0;answers={};revealed={};done=false;renderQuestion();window.scrollTo({top:0,behavior:"smooth"});}
+document.querySelectorAll("[data-mode]").forEach(b=>b.addEventListener("click",()=>setMode(b.dataset.mode)));
+els("home").addEventListener("click",showHome);els("finishHome").addEventListener("click",showHome);
+els("userAnswer").addEventListener("input",e=>{const q=list[pos];if(!q)return;answers[q.id]=e.target.value;revealed[q.id]=false;els("refAnswer").classList.add("hidden");els("reveal").textContent="检查答案";save();});
+els("reveal").addEventListener("click",()=>{const q=list[pos];revealed[q.id]=!revealed[q.id];renderQuestion();});
+els("next").addEventListener("click",next);els("previous").addEventListener("click",previous);
+els("restart").addEventListener("click",restart);els("again").addEventListener("click",restart);
+fetch("./data/questions.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("题库文件无法读取");return r.json()}).then(data=>{
+ modules=Array.isArray(data.modules)?data.modules.filter(m=>Array.isArray(m.questions)):[];
+ if(!modules.length)throw Error("题库为空");
+ const saved=restore();if(saved?.mode==="all")mode="all";
+ document.querySelectorAll("[data-mode]").forEach(b=>b.classList.toggle("active",b.dataset.mode===mode));
+ renderCatalog();
+ const hash=decodeURIComponent(location.hash.slice(1));
+ if(hash&&(hash==="all"||modules.some(m=>m.id===hash))){
+   if(saved&&saved.chosen===hash){chosen=hash;list=getList(hash);pos=Math.min(Math.max(0,saved.pos||0),list.length-1);answers=saved.answers||{};revealed=saved.revealed||{};done=!!saved.done;start(hash,true)}
+   else start(hash);
+ }
+}).catch(err=>{els("modules").replaceChildren(textEl("div","loading","载入失败："+err.message+"。请刷新网页重试。"));});
+})();
+</script>
+</body></html>
