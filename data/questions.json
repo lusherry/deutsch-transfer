@@ -578,6 +578,24 @@
           "stage": "transfer",
           "zh": "对我来说，教学质量比学校的位置更重要。",
           "de": "Die Unterrichtsqualität ist für mich wichtiger als die Lage der Schule."
+        },
+        {
+          "id": "h8-q10",
+          "stage": "rebuild",
+          "zh": "因此，我愿意住在大学校园里。",
+          "de": "Deshalb würde ich gerne auf dem Campus wohnen."
+        },
+        {
+          "id": "h8-q11",
+          "stage": "transfer",
+          "zh": "因此，我愿意去国外留学。",
+          "de": "Deshalb würde ich gerne im Ausland studieren."
+        },
+        {
+          "id": "h8-q12",
+          "stage": "transfer",
+          "zh": "因此，我愿意利用这个机会。",
+          "de": "Deshalb würde ich gerne diese Möglichkeit nutzen."
         }
       ],
       "topicId": "campus-housing"
