@@ -997,6 +997,56 @@
           "de": "Ob Studierende erfolgreich sind, hängt nicht nur von ihren Fähigkeiten, sondern auch von ihren Lernbedingungen ab."
         }
       ]
+    },
+    {
+      "id": "dw-schule-chancen-03",
+      "topicId": "dw-schule-chancen",
+      "title": "03 · 改变状况与变化",
+      "subtitle": "etwas an etwas ändern · sich ändern · zeigen, dass ...",
+      "questions": [
+        {
+          "id": "dwsc03-q1",
+          "stage": "transfer",
+          "zh": "我们必须改变这种状况。",
+          "de": "Wir müssen etwas an dieser Situation ändern."
+        },
+        {
+          "id": "dwsc03-q2",
+          "stage": "transfer",
+          "zh": "这种状况已经发生了变化。",
+          "de": "Diese Situation hat sich geändert."
+        },
+        {
+          "id": "dwsc03-q3",
+          "stage": "transfer",
+          "zh": "我们必须对此作出改变。",
+          "de": "Wir müssen etwas daran ändern."
+        },
+        {
+          "id": "dwsc03-q4",
+          "stage": "transfer",
+          "zh": "学生的学习条件已经发生了变化。",
+          "de": "Die Lernbedingungen der Schüler haben sich geändert."
+        },
+        {
+          "id": "dwsc03-q5",
+          "stage": "transfer",
+          "zh": "这个例子表明，学校可以改变学生的学习条件。",
+          "de": "Dieses Beispiel zeigt, dass Schulen etwas an den Lernbedingungen der Schüler ändern können."
+        },
+        {
+          "id": "dwsc03-q6",
+          "stage": "transfer",
+          "zh": "研究结果表明，这种状况是可以改变的。",
+          "de": "Die Studienergebnisse zeigen, dass man daran etwas ändern kann."
+        },
+        {
+          "id": "dwsc03-q7",
+          "stage": "transfer",
+          "zh": "一项研究表明，过去几年里住房状况发生了变化。",
+          "de": "Eine Studie zeigt, dass sich die Wohnsituation in den letzten Jahren geändert hat."
+        }
+      ]
     }
   ],
   "topics": [
