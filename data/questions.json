@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": "2026-11-18",
+  "updatedAt": "2026-11-21",
   "modules": [
     {
       "id": "housing-01",
@@ -921,6 +921,44 @@
           "de": "Wie groß das Problem ist, zeigen zahlreiche Studien."
         }
       ]
+    },
+    {
+      "id": "dw-schule-chancen-01",
+      "topicId": "dw-schule-chancen",
+      "title": "01 · 标题：提供机会与关系从句",
+      "subtitle": "jemandem etwas bieten · Relativsatz (die / das)",
+      "questions": [
+        {
+          "id": "dwsc01-q1",
+          "stage": "transfer",
+          "zh": "这所学校为孩子们提供了很多机会。",
+          "de": "Die Schule bietet den Kindern viele Chancen."
+        },
+        {
+          "id": "dwsc01-q2",
+          "stage": "transfer",
+          "zh": "这所大学为学生提供了良好的学习机会。",
+          "de": "Die Universität bietet den Studierenden gute Lernmöglichkeiten."
+        },
+        {
+          "id": "dwsc01-q3",
+          "stage": "transfer",
+          "zh": "这是一所为孩子们提供良好教育机会的学校。",
+          "de": "Das ist eine Schule, die Kindern gute Bildungschancen bietet."
+        },
+        {
+          "id": "dwsc01-q4",
+          "stage": "transfer",
+          "zh": "我希望在一所提供很多机会的大学学习。",
+          "de": "Ich möchte an einer Universität studieren, die viele Möglichkeiten bietet."
+        },
+        {
+          "id": "dwsc01-q5",
+          "stage": "transfer",
+          "zh": "这是一个为年轻人提供新机会的项目。",
+          "de": "Das ist ein Projekt, das jungen Menschen neue Chancen bietet."
+        }
+      ]
     }
   ],
   "topics": [
@@ -935,6 +973,12 @@
       "title": "第02篇 · 人人负担得起的住房",
       "subtitle": "DW Top-Thema 01｜Bezahlbarer Wohnraum für alle – aber wie?",
       "description": "住房短缺、公共政策与社会公平；精读中的23个值得记忆的表达"
+    },
+    {
+      "id": "dw-schule-chancen",
+      "title": "第03篇 · Eine Schule, die Chancen bietet.",
+      "subtitle": "DW Top-Thema｜Eine Schule, die Chancen bietet.",
+      "description": "教育机会与社会背景：从标题中的 bieten 和关系从句开始练习"
     }
   ]
 }
