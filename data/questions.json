@@ -959,6 +959,44 @@
           "de": "Das ist ein Projekt, das jungen Menschen neue Chancen bietet."
         }
       ]
+    },
+    {
+      "id": "dw-schule-chancen-02",
+      "topicId": "dw-schule-chancen",
+      "title": "02 · 教育成就与影响因素",
+      "subtitle": "von etwas abhängen · indirekte Fragesätze · nicht nur ... sondern auch",
+      "questions": [
+        {
+          "id": "dwsc02-q1",
+          "stage": "transfer",
+          "zh": "教育成就取决于社会出身。",
+          "de": "Der Bildungserfolg hängt von der sozialen Herkunft ab."
+        },
+        {
+          "id": "dwsc02-q2",
+          "stage": "transfer",
+          "zh": "学生的成功在很大程度上取决于他们的学习条件。",
+          "de": "Der Erfolg der Studierenden hängt stark von ihren Lernbedingungen ab."
+        },
+        {
+          "id": "dwsc02-q3",
+          "stage": "transfer",
+          "zh": "孩子在学校表现得如何，取决于很多因素。",
+          "de": "Wie gut ein Kind in der Schule ist, hängt von vielen Faktoren ab."
+        },
+        {
+          "id": "dwsc02-q4",
+          "stage": "transfer",
+          "zh": "年轻人拥有怎样的职业机会，往往取决于他们接受的教育。",
+          "de": "Welche beruflichen Möglichkeiten junge Menschen haben, hängt oft von ihrer Ausbildung ab."
+        },
+        {
+          "id": "dwsc02-q5",
+          "stage": "transfer",
+          "zh": "学生能否取得成功，不仅取决于他们的能力，还取决于学习条件。",
+          "de": "Ob Studierende erfolgreich sind, hängt nicht nur von ihren Fähigkeiten, sondern auch von ihren Lernbedingungen ab."
+        }
+      ]
     }
   ],
   "topics": [
